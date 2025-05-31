@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Paytone+One&family=Syne:wght@400..800&family=Ultra&display=swap');
+
+/*ÜST MENÜ*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+  }
+
+  .nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-left {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+  }
+
+  .nav-left a, .nav-right a {
+  font-family: "cal sans";
+  letter-spacing: 0.03cm;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  transform: scale(1.2);
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.nav-left a:hover {
+  background-color: #ff8080; /* yeşil tonu */
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.logo {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logoPNG {
+    width: 120px;
+    height: 120px;
+}
+
+.logoYazi {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(to bottom, #ce3535 25%, #4a1111 50%, #ce3535 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoMetin {
+    font-family: "cal sans";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-left: -20px;
+  }
+
+  .nav-right .donate-btn {
+    padding: 10 10;
+    background-color: #ED1B24;
+  }
+
+  .nav-right-png {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+  }
+
+
+  .product-section {
+    position: relative;
+    padding: 60px 40px;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    width: fit-content;    
+    position: relative;
+    font-family: "arial";
+    text-align: left;
+    font-size: 42px;
+    margin-bottom: 30px;
+    left: 30px;
+    top: 30px;
+    color: #2c2c2c;
+    z-index: 1;
+  }
+
+  .section-title:hover {
+    text-decoration: underline solid #ffffff;
+    transition: ease 250ms;
+    transform: translateY(-10px);
+    cursor: default;
+  }
+
+  .product-info-text {
+  max-width: fit-content;
+  margin: 0 auto 40px 30px;
+  text-align: justify;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  } 
+
+  #organlar-heading-content {
+    padding: 0 70;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    max-width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+ .filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto 50px auto;
+  padding: 12px 40px; /* daha ince üst boşluk */
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  max-width: 1400px; /* genişletildi */
+}
+
+.filter-item {
+  display: flex;
+  align-items: center; /* label ve select'i aynı hizada tutar */
+  gap: 8px;
+  font-family: 'calibri';
+}
+
+.filter-item label {
+  font-size: 15px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.filter-bar select {
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: 0.3s;
+  min-width: 150px;
+}
+
+.filter-bar select:focus {
+  outline: none;
+  border-color: #ce3535;
+  box-shadow: 0 0 6px rgba(206, 53, 53, 0.4);
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.filter-button button {
+  background-color: #ce3535;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-family: calibri;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button button:hover {
+  background-color: #a82323;
+}
+
+
+  .product-grid,
+  .see-all-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sabit sütun */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr; /* telefon */
+    }
+  }
+  
+  .product-card {
+    width: 500px;
+    height: 425px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 70%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 14px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    font-family: "calibri";
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-price {
+    font-family: "calibri";
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 15px;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .fav-btn,
+  .cart-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fav-btn {
+    padding: 5 8;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #d9534f;
+  }
+  
+  .fav-btn:hover {
+    background-color: #fce4ec;
+  }
+  
+  .cart-btn {
+    background-color: #2e8b57;
+    color: white;
+  }
+  
+  .cart-btn:hover {
+    background-color: #276d4d;
+  }
+  
+ .toast-message {
+  font-family: 'calibri';
+  font-weight: 600;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #bdbdbd;
+  color: rgb(236, 236, 236);
+  padding: 12px 24px;
+  padding-bottom: 20;
+  font-size: 24px;
+  border-radius: 50px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.4s ease, transform 0.6s ease;
+  box-shadow: 0px 01px 10px 1px rgba(0, 0, 0, 0.65);
+ }
+
+.toast-message.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.toast-message.hide {
+  opacity: 0;
+  transform: translate(-50%, 100%);
+}
+
+.product-quotation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Quotation*/
+.quotation {
+  font-size: 48;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  padding: 60 100;
+  color: #822225;
+}
+
+ .quotation:hover {
+  cursor: default;
+  user-select: none;
+ }
+
+/*Footer*/
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 60px;
+  font-family: 'Calibri', sans-serif;
+  margin-top: 50;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-brand {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #aa1d1d, #4a1111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-mail {
+  color: #ffdddd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 12px;
+  margin-right: 100px ;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-social i {
+  margin-right: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+}

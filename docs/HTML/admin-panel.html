@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="../CSS/admin-panelCss.css">
+    <link rel="shortcut icon" href="../GORSELLER/kidney.ico" type="image/x-icon">
+    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <header class="admin-header">
+
+
+    <div class="nav-left">
+           <a class="logoYazi" href="home.html">
+                <img id="logoPNG" src="../GORSELLER/logo.png" alt="Organ Mafyası logo">
+                <span class="logoMetin"> Organ <br> Sepetim</span>
+            </a>
+        </div>
+
+        <div class="orta-yazi">
+              <span class="logoMetin"> Admin Panel</span>
+        </div>
+  </header>
+
+  <div class="admin-container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" id="menu-organ-ekle">Organ Ekle/Sil</a></li>
+        <li><a href="#" id="menu-stok">Stok Takibi</a></li>
+        <li><a href="#" id="menu-kullanicilar">Kullanıcılar</a></li>
+        <li><a href="#" id="menu-bagislar">Bağışlar</a></li>
+
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="organ-ekle" class="panel-section">
+        <h2>Organları Aktifleştir/Sil</h2>
+        <div class="organ-kartlari">
+          <div class="organ-karti" data-id="kalp">
+            <p>Kalp</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="akciger">
+            <p>Akciğer</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="karaciger">
+            <p>Karaciğer</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="bobrek">
+            <p>Böbrek</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="dalak">
+            <p>Dalak</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="pankreas">
+            <p>Pankreas</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="bagirsak">
+            <p>İnce Bağırsak</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="kornea">
+            <p>Kornea</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="deri">
+            <p>Deri</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+          <div class="organ-karti" data-id="kemik">
+            <p>Kemik</p>
+            <button class="ekle-btn">Ekle</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stok  -->
+      <section id="stok" class="panel-section" style="display: none;">
+  <h2>Organ Stok Takibi</h2>
+  
+  <div style="margin-bottom: 20px;">
+    <input id="organName" placeholder="Organ adı">
+    <input id="organAdet" type="number" placeholder="Stok adedi">
+    <button id="stokEkleBtn">Ekle / Güncelle</button>
+  </div>
+
+  <table class="stok-table">
+    <thead>
+      <tr>
+        <th>Organ</th>
+        <th>Stok</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody id="stokTabloBody">
+      <!-- JS ile doldurulacak -->
+    </tbody>
+  </table>
+
+  <div style="text-align: right; margin-top: 20px;">
+    <button id="indirExcelBtn" class="excel-btn">Rapor İndir</button>
+  </div>
+</section>
+
+<!--Kullanıcılar-->
+<section id="kullanicilar" class="panel-section" style="display: none;">
+  <h2>Kullanıcı Yönetimi</h2>
+
+  <!-- Yeni kullanıcı ekleme formu -->
+  <form id="addUserForm" style="margin-bottom: 20px;">
+    <label for="newUsername">Kullanıcı Adı:</label>
+    <input type="text" id="newUsername" required>
+
+    <label for="newPassword">Parola:</label>
+    <input type="password" id="newPassword" required>
+
+    <label for="newRole">Rol:</label>
+    <select id="newRole" required>
+      <option value="user">Kullanıcı</option>
+      <option value="admin">Admin</option>
+    </select>
+
+    <button type="submit">Ekle</button>
+  </form>
+
+  <!-- Kullanıcı listesi -->
+  <div id="user-list">
+    <!-- JS ile dinamik olarak doldurulacak -->
+  </div>
+</section>
+
+
+
+<script src="../JAVASCRIPT/admin-panelJS.js"></script>
+
+</body>
+</html>
+
+
+

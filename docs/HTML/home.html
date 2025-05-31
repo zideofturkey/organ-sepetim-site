@@ -1,0 +1,390 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Sepetim</title>
+    <link rel="stylesheet" href="../CSS/homeCss.css">
+    <link rel="shortcut icon" href="../GORSELLER/kidney.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div id="toast" class="toast-message"></div>
+
+<!--HEADING-->
+    <header class="navbar" id="mainNavbar">
+        <div class="nav-left">
+          <div id="logoutDotContainer" class="logout-dot-container" style="display: none;">
+          <div id="logoutDot" class="logout-dot"></div>
+          </div>
+
+          <a href="organlar.html">Organlar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+
+        <div class="logo">
+            <a class="logoYazi" href="home.html">
+                <img id="logoPNG" src="../GORSELLER/logo.png" alt="Organ Mafyası logo">
+                <span class="logoMetin"> Organ <br> Sepetim</span>
+            </a>
+        </div>
+
+        <div class="nav-right">
+          <div class="donate-tooltip-container"><button class="donate-btn"><i class="fa-solid fa-circle-plus donate-icon"></i><span class="tooltip-text">Organ Bağışla!</span></button></div>
+          <a href="favorites.html"><img class="nav-right-png" src="../GORSELLER/favorites.png" alt="Favoriler"></a>
+          <a href="shopping-cart.html"><img class="nav-right-png" src="../GORSELLER/shopping-cart2.png" alt="Sepete Ekle"></a>   
+          <a href="admin-panel.html" id="adminIcon" class="admin-account-link" style="display: none;">
+          <img src="../GORSELLER/account.png" alt="Admin Panel" class="admin-icon">
+</a>
+   
+        </div>
+      </header>
+
+      <!--MalumVideo-->
+      <section class="hero-video">
+  <div class="video-overlay">
+    <div class="video-thumbnail" onclick="playVideo()">
+      <!-- Kapak Görseli -->
+      <img src="../GORSELLER/videoThumbnail.jpg" alt="Video Kapak" class="cover-image">
+      <!-- Oynat Butonu -->
+      <div class="play-button">&#9658;</div>
+    </div>
+    <!-- YouTube Video -->
+    <div class="video-iframe" id="videoIframe">
+      <iframe id="ytVideo" width="100%" height="100%" src="https://www.youtube.com/embed/tb4AFrapjGg?si=5juZQkkDWMyvBriQ" 
+        title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+      <section class="product-section">
+        <div class="section-bg-text" id="bgTextOrganlar">Organlar</div>
+        <h2 class="section-title">Öne Çıkan Organlar</h2>
+
+        <div class="product-grid">
+          
+          <!-- Ürün Kartı -->
+          <div class="product-card" data-id="1" data-name="Böbrek" data-imgname="bobrek" data-price="120">
+            <img src="../gorseller/bobrek.png" alt="Böbrek" class="product-img">
+            <h3 class="product-name">Sadık Bey'in 1 Böbreği</h3>
+            <p class="product-price">₺0.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+          <div class="product-card" data-id="2" data-name="Kalp" data-imgname="Kalp" data-price="520">
+            <img src="../gorseller/kalp.png" alt="Kalp" class="product-img">
+            <h3 class="product-name">Taş Gibi Kalp</h3>
+            <p class="product-price">₺520.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+          <div class="product-card" data-id="3" data-name="Akciğer" data-imgname="Akciger" data-price="280">
+            <img src="../gorseller/akciger.png" alt="Akciger" class="product-img">
+            <h3 class="product-name">Hiç Sigara İçilmemiş Akciğer</h3>
+            <p class="product-price">₺280.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="4" data-name="Beyin" data-imgname="Beyin" data-price="640">
+            <img src="../gorseller/beyin.png" alt="beyin" class="product-img">
+            <h3 class="product-name">Sağ Lobu Gelişmiş Beyin</h3>
+            <p class="product-price">₺640.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="5" data-name="Burun" data-imgname="Burun" data-price="160">
+            <img src="../gorseller/burun.png" alt="Burun" class="product-img">
+            <h3 class="product-name">Burun (Estetiksiz)</h3>
+            <p class="product-price">₺160.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="6" data-name="Karaciğer" data-imgname="Karaciger" data-price="250">
+            <img src="../gorseller/karaciger.png" alt="Karaciger" class="product-img">
+            <h3 class="product-name">Karaciğer</h3>
+            <p class="product-price">₺250.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="see-all-container">
+          <a href="organlar.html" class="see-all-button">Tümünü Gör</a>
+        </div>
+
+      </section>
+
+      <section class="about-section">
+  <div class="section-bg-text" id="bgTextHakkimizda">Hakkımızda</div>
+  <h2 class="section-title">Bu Ücret Neden?</h2>
+
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        <p>
+  Yarattığımız projenin bir <strong>bağış uygulaması</strong> olmasına rağmen ücret almamızın sebebi bu sektördeki 
+  hizmetlerin <em>pahalılığından</em> ileri geliyor. Sitemizdeki fiyatlardan da anlayabileceğiniz üzere 
+  meblağlar <span style="color:#2e8b57;"><strong>sembolik</strong></span> denebilecek düzeyde tutuldu. 
+  <br><br>
+  Bize bağışlanan <strong>organ</strong> ve <strong>uzuvlar</strong>dan <u>hiçbir ücret</u> almamakla beraber, bu talep ettiğimiz 
+  miktar <em>organların yeni vücutlarına aktarımı, montajı</em> içindir. Bizi anlayışla karşılayacağınızı umuyor ve 
+  <strong>şimdiden teşekkür ediyoruz</strong>.
+  <br><br>
+</p>
+<h2>Organ Sepetim</h3>
+<p>
+  Projenin kurucu ismi <strong>Sayın Ediz Kaçmaz</strong>, bu websiteyi organ ihtiyacı olan hastalar için 
+  <em>özen ile tasarladı</em>. Tabii ki web site tasarlanırken <strong>Sağlık Bakanlığından</strong> gereken tüm izin ve evraklar 
+  temin edildi. Sosyal mecraların hayatımıza <em>pozitif etki edecek yönlerini artırma güdüsüyle</em> bu projeyi geliştiren 
+  kurucumuz, en pürüzsüz şekilde prosedür ve gelişmelerin yerine getirilmesi için tüm emeğini ortaya koyuyor.
+</p>
+
+<p>
+  Uygulamanın operasyonel süreci şu an <strong><span style="color:#156319;">Türkiye – İstanbul merkezli</span></strong> yürütülmektedir. 
+  Montaj ve nakil işlemleri, İstanbul’daki anlaşmalı <strong>beş ayrı özel hastane</strong> bünyesinde gerçekleştirilmektedir. 
+  Ayrıca yurt dışından yapılan başvurular için <em>Almanya, Hollanda ve Birleşik Arap Emirlikleri</em> ile çeşitli işbirliklerimiz de aktif hale getirilmiştir.
+  <br><br>
+  Organ Sepetim girişimi, kar amacı gütmeyen fakat sürdürülebilirliği sağlamak adına düşük bütçeli çözümler üreten bir yapıdır. 
+  Yalnızca bireysel değil, aynı zamanda <strong>STK’lar, tıp merkezleri ve gönüllü ağları</strong> ile de iş birliği yapılmaktadır.
+  <br><br>
+  Platformumuzda yer alan tüm işlemler, <em style="color:#8b0000;">Gizlilik İlkeleri</em> ve <em style="color:#8b0000;">Kişisel Verilerin Korunması Kanunu (KVKK)</em> kapsamında şeffaflıkla yürütülmektedir.
+  <br><br>
+  <strong>Organ bağışına bir tık kadar yakın olduğunuz bu yolculukta</strong> bizimle olduğunuz için minnettarız.
+</p>
+
+      </p>
+      <a href="hakkimizda.html" class="see-all-button">Hakkımızda</a>
+    </div>
+    <div class="about-image">
+  <img src="../GORSELLER/hakkimizda-gorsel.png" alt="Hakkımızda Görseli" id="aboutThumbnail">
+</div>
+
+<!-- Modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+  </div>
+</section>
+
+
+<!--Bağışla-->
+
+<section class="donation-section">
+
+  <div class="section-bg-text" id="bgTextBagis">Bağışla</div>
+
+  <h2 class="section-title">Bağışla!</h2>
+
+  <div class="donation-content">
+    <div class="donation-text">
+      <h2><strong style="color: #ce3535;">Organ Bağışıyla Bir Hayat Kurtarın</strong></h2>
+      <p><strong>Her bağış bir mucizedir.</strong> Organ bağışı, başka bir insana umut olmak demektir.</p>
+      <p><em>Şeffaflık, etik değerler ve gönüllülük ilkeleriyle</em> yürütülen bu süreçte, siz sadece bağış yapmazsınız; birine nefes, kalp atışı, yaşama hakkı verirsiniz.</p>
+      <p>
+        Süreç boyunca tüm gelişmeler hakkında <strong style="color: #ce3535;">adım adım bilgilendirilirsiniz</strong>.
+        Başvurular uzman ekipler tarafından değerlendirilir ve siz sadece tek bir tıklamayla hayat kurtarmaya adım atarsınız.
+      </p>
+    </div>
+
+    <div class="donation-action">
+      <button class="donate-btn">
+        <i class="fa-solid fa-circle-plus donate-icon"></i>
+        Bağışla
+      </button>
+  </div>
+  </div>
+
+  <div class="donation-steps">
+  <div class="step-card step-white">
+    <div class="step-icon"><i class="fas fa-user-edit"></i></div>
+    <h4>Formu Doldurun</h4>
+    <p>Adınızı, iletişim bilgilerinizi ve bağışlamak istediğiniz organı/organları belirtin ve yaklaşık 1 haftalık bekleme süreci başlasın.</p>
+  </div>
+  <div class="step-card step-red">
+    <div class="step-icon"><i class="fas fa-vial"></i></div>
+    <h4>Sağlık Kontrolü</h4>
+    <p>Ardından telefon numaranız aracılığı ile sizinle iletişime geçeriz. Mümkün olan en yakın sürede size en yakın hastanemizde alanında uzman doktorlar tarafından detaylı muayeneden geçersiniz.</p>
+  </div>
+  <div class="step-card step-green">
+    <div class="step-icon"><i class="fas fa-heartbeat"></i></div>
+    <h4>Bağış Tamamlandı</h4>
+    <p>Gerekler süreçler tamamlanır. Her aşama uygun şekilde ilerler ise organınız ihtiyaç sahibine ulaştırılır. Yeni bir yaşam başlar.</p>
+  </div>
+</div>
+
+<!-- Bağış Formu Modal -->
+<div class="donation-modal" id="donationModal">
+  <div class="donation-modal-content">
+    <span class="donation-close" id="closeDonationModal">&times;</span>
+    <h2>Organ Bağış Formu</h2>
+    <form id="donationForm">
+      <div class="form-group">
+        <label class="form-headings">Ad Soyad:</label>
+        <input type="text" name="adSoyad" placeholder="Adınız Soyadınız" required>
+
+        <label class="form-headings">Telefon:</label>
+        <input type="tel" name="telefon" placeholder="05XXXXXXXXX" maxlength="11" required>
+
+        <label class="form-headings">E-posta:</label>
+        <input type="email" name="email" placeholder="ornek@mail.com" required>
+
+        <label class="form-headings">Bağışlamak İstediğiniz Organ(lar):</label>
+        <div class="organ-checkbox-group">
+          <label><input type="checkbox" name="organlar" value="Böbrek"> Böbrek</label>
+          <label><input type="checkbox" name="organlar" value="Kalp"> Kalp</label>
+          <label><input type="checkbox" name="organlar" value="Akciğer"> Akciğer</label>
+          <label><input type="checkbox" name="organlar" value="Karaciğer"> Karaciğer</label>
+          <label><input type="checkbox" name="organlar" value="Göz"> Göz</label>
+          <label><input type="checkbox" name="organlar" value="Pankreas"> Pankreas</label>
+          <label><input type="checkbox" name="organlar" value="Kemik İliği"> Kemik İliği</label>
+          <label><input type="checkbox" name="organlar" value="Cilt"> Cilt</label>
+          <label><input type="checkbox" name="organlar" value="Diğer"> Diğer (aşağıda belirtin)</label>
+        </div>
+
+        <label class="form-headings">Belirtmek İstedikleriniz:</label>
+        <textarea name="mesaj" cols="60" rows="10" placeholder="Opsiyonel mesaj yazabilirsiniz..."></textarea>
+      </div>
+
+      <button type="submit" class="donate-submit">Formu Gönder</button>
+
+      <div id="successMessage" class="success-message">✔ Başvurunuz başarıyla gönderildi!</div>
+    </form>
+  </div>
+</div>
+
+</section>
+
+<!--İletişim-->
+<section class="contact-section">
+  <div class="section-bg-text" id="bgTextIletisim">İletişim</div>
+  <h2 class="section-title">Bize Ulaşın</h2>
+
+  <div class="contact-content">
+    <!-- Sol Kısım: Bilgiler -->
+    <div class="contact-info">
+      <p><strong>Her zaman buradayız!</strong> Bizimle iletişime geçmek için aşağıdaki kanallardan birini kullanabilirsiniz.</p>
+      <ul class="contact-list">
+        <li><i class="contact-li"><span style="font-size: 20px; font-style: normal; font-weight: normal;">Çağrı:</span> </i><a class="contact-li" href="tel:+90 531 666 88 28">+90 531 666 88 28</a> </li>
+        <li><i class="contact-li"><span style="font-size: 20px; font-style: normal; font-weight: normal;">E-posta: </span></i><a class="contact-li" href="mailto:ediz.kacmaz19@gmail.com">info@organsepetim.org</a></li>
+      </ul>
+
+      <div class="social-icons">
+  <a href="https://wa.me/905316668828" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://instagram.com/organsepetim" target="_blank" class="icon instagram" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://twitter.com/organsepetim" target="_blank" class="icon twitter" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://maps.app.goo.gl/RtzT565evafdXZg37" target="_blank" class="icon map" aria-label="Google Maps">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+</div>
+
+      <a href="iletisim.html" class="see-all-button">İletişim</a>
+
+    </div>
+
+    <!-- Sağ Kısım: Form -->
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" placeholder="Adınız" required>
+        <input type="email" placeholder="E-posta Adresiniz" required>
+        <input type="tel" id="phoneInput" placeholder="Telefon Numaranız" maxlength="11" required>
+        <textarea rows="5" placeholder="Mesajınız" required></textarea>
+        <button type="submit" class="see-all-button">Gönder</button>
+      </form>
+    </div></div>
+
+  <!-- Harita Kısmı -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.6774351413615!2d29.098979!3d41.032312499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9c27feb2487%3A0xe3d6a3f3c0d3d672!2zxLBzdGFuYnVsIDI5IE1hecSxcyDDnG5pdmVyc2l0ZXNpIEVsbWFsxLFrZW50IFllcmxlxZ9rZXNp!5e0!3m2!1str!2str!4v1747175471860!5m2!1str!2str" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Giriş Modal -->
+<div id="loginModal" class="modal-overlay">
+  <div class="login-modal">
+    <h2>Giriş Yap</h2>
+    <form id="loginForm">
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Parola:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Giriş Yap</button>
+    </form>
+  </div>
+</div>
+
+<!-- Özel Bildirim Kutusu -->
+<div id="customAlert" class="custom-alert"></div>
+ 
+<!--Footer-->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Sol: Logo ve Yazı -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="../GORSELLER/logo.png" alt="Organ Sepetim Logo" />
+        <span class="footer-brand">Organ Sepetim</span>
+      </div>
+      <p class="footer-copy">© 2025 Organ Sepetim. Tüm hakları saklıdır.</p>
+      <a href="mailto:info@organsepetim.org" class="footer-mail">info@organsepetim.org</a>
+    </div>
+
+    <!-- Orta: Bağlantılar -->
+    <div class="footer-links">
+      <h4>Hızlı Bağlantılar</h4>
+      <ul>
+        <li><a href="organlar.html">Organlar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="favorites.html">Favoriler</a></li>
+        <li><a href="shopping-cart.html">Sepet</a></li>
+      </ul>
+    </div>
+
+    <!-- Sağ: Sosyal Medya -->
+    <div class="footer-social">
+      <h4>Bizi Takip Edin</h4>
+      <a href="https://wa.me/905316668828" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/organsepetim" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/organsepetim" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://maps.app.goo.gl/RtzT565evafdXZg37" target="_blank"><i class="fas fa-map-marker-alt"></i> Konum</a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="../JAVASCRIPT/homeJS.js" defer></script>
+
+</body>
+</html>

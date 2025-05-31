@@ -1,0 +1,88 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
+    <link rel="stylesheet" href="../CSS/shopping-cartCss.css">
+    <link rel="shortcut icon" href="../GORSELLER/kidney.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<main>
+    <header class="navbar" id="mainNavbar">
+        <div class="nav-left">
+          <a href="organlar.html">Organlar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+        <div class="logo">
+            <a class="logoYazi" href="home.html">
+                <img id="logoPNG" src="../GORSELLER/logo.png" alt="Organ Mafyası logo">
+                <span class="logoMetin"> Organ <br> Sepetim</span>
+            </a>
+        </div>
+        <div class="nav-right">
+          <a href="favorites.html"><img class="nav-right-png" src="../GORSELLER/favorites.png" alt="Favoriler"></a>
+          <a href="shopping-cart.html"><img class="nav-right-png" src="../GORSELLER/shopping-cart2.png" alt="Sepete Ekle"></a>
+        </div>
+      </header>
+
+      <h1>Sepetim</h1>
+
+        <div class="cart-page">
+  <!-- Ürün kartları (sol) -->
+  <div class="cart-items" id="cartContainer"></div>
+
+  <!-- Sepet özeti (sağ) -->
+  <div class="cart-summary">
+    <h2>Sepet Özeti</h2>
+    <p><strong> Organ Ücreti:</strong> ₺0</p>
+    <p id="montagePrice"><strong>Montaj:</strong>  Ücretsiz</p>
+    <p id="totalPrice"><strong>Toplam:</strong> ₺0</p>
+    <button class="checkout-btn">Ödemeye Geç</button>
+  </div>
+</div>
+
+</main>  
+
+      <!--Footer-->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Sol: Logo ve Yazı -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="../GORSELLER/logo.png" alt="Organ Sepetim Logo" />
+        <span class="footer-brand">Organ Sepetim</span>
+      </div>
+      <p class="footer-copy">© 2025 Organ Sepetim. Tüm hakları saklıdır.</p>
+      <a href="mailto:info@organsepetim.org" class="footer-mail">info@organsepetim.org</a>
+    </div>
+
+    <!-- Orta: Bağlantılar -->
+    <div class="footer-links">
+      <h4>Hızlı Bağlantılar</h4>
+      <ul>
+        <li><a href="organlar.html">Organlar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="favorites.html">Favoriler</a></li>
+        <li><a href="shopping-cart.html">Sepet</a></li>
+      </ul>
+    </div>
+
+    <!-- Sağ: Sosyal Medya -->
+    <div class="footer-social">
+      <h4>Bizi Takip Edin</h4>
+      <a href="https://wa.me/905316668828" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/organsepetim" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/organsepetim" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://maps.app.goo.gl/RtzT565evafdXZg37" target="_blank"><i class="fas fa-map-marker-alt"></i> Konum</a>
+    </div>
+  </div>
+</footer>
+    
+      <script src="../JAVASCRIPT/shopping-cartJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organlar</title>
+    <link rel="stylesheet" href="../CSS/organlarCSS.css">
+    <link rel="shortcut icon" href="../GORSELLER/kidney.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    </style>
+</head>
+
+<body>
+<main>
+    <!--HEADING-->
+    <header class="navbar" id="mainNavbar">
+        <div class="nav-left">
+          <a href="organlar.html">Organlar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+
+        <div class="logo">
+            <a class="logoYazi" href="home.html">
+                <img id="logoPNG" src="../GORSELLER/logo.png" alt="Organ Mafyası logo">
+                <span class="logoMetin"> Organ <br> Sepetim</span>
+            </a>
+        </div>
+
+        <div class="nav-right">
+          <a href="favorites.html"><img class="nav-right-png" src="../GORSELLER/favorites.png" alt="Favoriler"></a>
+          <a href="shopping-cart.html"><img class="nav-right-png" src="../GORSELLER/shopping-cart2.png" alt="Sepete Ekle"></a>      
+        </div>
+      </header>
+
+      <section class="product-section">
+        <div id="organlar-heading-content">
+        <h2 class="section-title">Organlar</h2>
+        <p class="product-info-text">
+  &emsp; &emsp;  &emsp; <span style="height: 1000; font-size: 40px; font-style: italic;">B</span>urada <strong>bağışa açık olan tüm organları</strong> detaylı şekilde görebilir, <span style="color:#ce3535; font-weight:bold;">bağış süreci hakkında kapsamlı bilgi</span> edinebilirsiniz. Yayınlanan her organ, <em>alanında uzman hekimler</em> tarafından <strong>çok aşamalı sağlık kontrollerinden</strong> geçirilmiş, <em>yasal prosedürlere uygunluğu</em> belgelenmiş ve <strong>nakil için hazır hale</strong> getirilmiştir. <span style="color:#2e8b57;">Organlarımız; özenle korunmakta, şeffaflık ve etik değerler</span> doğrultusunda ihtiyaç sahiplerine ulaştırılmaktadır.
+
+  <br>&emsp; &emsp;  &emsp; <span style="height: 1000; font-size: 40px; font-style: italic;">P</span>latformumuz, <em>organ bağışı sürecini herkes için erişilebilir ve anlaşılır hale getirmek</em> amacıyla geliştirilmiştir. <strong>Her ürün</strong>, <span style="color:#444;">donör geçmişi</span> ve <span style="color:#444;">sağlık raporlarıyla</span> birlikte değerlendirilir. Bu süreçte sizin için oluşturulan sistem; <strong>hızlı, güvenli ve destekleyici</strong> bir şekilde ilerler.
+
+  <span style="font-weight:bold; color:#ce3535;">Organ bağışının yalnızca bir tıbbi süreç değil, aynı zamanda bir yaşam armağanı</span> olduğuna inanıyoruz. <em>Her bağış; yeni bir umut, yeni bir başlangıç demektir.</em> Dilerseniz ürün detaylarını inceleyebilir, favorilerinize ekleyebilir ya da <strong style="color:#2e8b57;">tek tıkla başvuru sürecinizi başlatabilirsiniz</strong>. <span style="font-style: italic;">Hayat vermeye bir adım daha yaklaşın.</span>
+        </p>
+
+        </div>
+
+        <div class="product-grid" id="favoritesContainer"></div>
+
+
+        <!-- FİLTRE ÇUBUĞU -->
+<div class="filter-bar">
+  <div class="filter-item">
+  <label for="filterType">Organ Türü</label>
+  <select id="filterType">
+    <option value="">Belirtilmemiş</option>
+    <option value="Böbrek">Böbrek</option>
+    <option value="Kalp">Kalp</option>
+    <option value="Akciğer">Akciğer</option>
+    <option value="Beyin">Beyin</option>
+    <option value="Burun">Burun</option>
+    <option value="Karaciğer">Karaciğer</option>
+    <option value="Göz">Göz</option>
+    <option value="Dalak">Dalak</option>
+    <option value="Pankreas">Pankreas</option>
+  </select>
+  </div>
+
+<div class="filter-item">
+  <label for="filterHealth">Sağlık Durumu</label>
+    <select id="filterHealth">
+      <option value="">Belirtilmemiş</option>
+    <option value="Çok iyi">Çok İyi</option>
+    <option value="İyi">İyi</option>
+    <option value="Makul">Makul</option>
+  </select>
+</div>
+
+<div class="filter-item">
+  <label for="filterAge">Donör Yaşı</label>
+    <select id="filterAge">
+      <option value="">Belirtilmemiş</option>
+    <option value="20-30">20-30</option>
+    <option value="31-40">31-40</option>
+    <option value="41-50">41-50</option>
+    <option value="51+">51+</option>
+  </select>
+</div>
+
+<div class="filter-item">
+   <label for="filterGender">Donör Cinsiyeti</label>
+    <select id="filterGender">
+      <option value="">Belirtilmemiş</option>
+    <option value="Erkek">Erkek</option>
+    <option value="Kadın">Kadın</option>
+  </select>
+</div>
+
+<div class="filter-item">
+  <label for="filterBlood">Kan Grubu</label>
+    <select id="filterBlood">
+      <option value="">Belirtilmemiş</option>
+    <option value="Arh+">Arh+</option>
+    <option value="Arh-">Arh-</option>
+    <option value="Brh+">Brh+</option>
+    <option value="Brh-">Brh-</option>
+    <option value="ABrh+">ABrh+</option>
+    <option value="ABrh-">ABrh-</option>
+    <option value="0rh+">0rh+</option>
+    <option value="0rh-">0rh-</option>
+  </select>
+</div>
+
+ <div class="filter-button">
+    <button onclick="applyFilters()">Ara</button>
+  </div>
+</div>
+
+
+        <div class="product-grid">          
+          <!-- Ürün Kartı -->
+          <div class="product-card" data-id="1" data-name="Böbrek" data-imgname="bobrek" data-price="120" data-type="Böbrek" data-health="İyi" data-age="54" data-gender="Erkek" data-blood="ABrh+">
+            <img src="../gorseller/bobrek.png" alt="Böbrek" class="product-img">
+            <h3 class="product-name">Sadık Bey'in 1 Böbreği</h3>
+            <p class="product-price">₺0.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+          <div class="product-card" data-id="2" data-name="Kalp" data-imgname="Kalp" data-price="520" data-type="Kalp" data-health="Çok iyi" data-age="27" data-gender="Erkek" data-blood="0rh+">
+            <img src="../gorseller/kalp.png" alt="Kalp" class="product-img">
+            <h3 class="product-name">Taş Gibi Kalp</h3>
+            <p class="product-price">₺520.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+          <div class="product-card" data-id="3" data-name="Akciğer" data-imgname="Akciger" data-price="280" data-type="Akciğer" data-health="Makul" data-age="35" data-gender="Erkek" data-blood="Arh-">
+            <img src="../gorseller/akciger.png" alt="Akciger" class="product-img">
+            <h3 class="product-name">Hiç Sigara İçilmemiş Akciğer</h3>
+            <p class="product-price">₺280.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="4" data-name="Beyin" data-imgname="Beyin" data-price="640" data-type="Beyin" data-health="İyi" data-age="30" data-gender="Kadın" data-blood="A+">
+            <img src="../gorseller/beyin.png" alt="beyin" class="product-img">
+            <h3 class="product-name">Sağ Lobu Gelişmiş Beyin</h3>
+            <p class="product-price">₺640.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="5" data-name="Burun" data-imgname="Burun" data-price="160" data-type="Burun" data-health="Çok iyi" data-age="25" data-gender="Erkek" data-blood="Brh+">
+            <img src="../gorseller/burun.png" alt="Burun" class="product-img">
+            <h3 class="product-name">Burun (Estetiksiz)</h3>
+            <p class="product-price">₺160.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="6" data-name="Karaciğer" data-imgname="Karaciger" data-price="250" data-type="Karaciğer" data-health="Makul" data-age="38" data-gender="Erkek" data-blood="Arh+">
+            <img src="../gorseller/karaciger.png" alt="Karaciger" class="product-img">
+            <h3 class="product-name">Karaciğer</h3>
+            <p class="product-price">₺250.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="7" data-name="Göz" data-imgname="goz" data-price="320" data-type="Göz" data-health="İyi" data-age="55" data-gender="Kadın" data-blood="ABrh+">
+            <img src="../gorseller/goz2.png" alt="Karaciger" class="product-img">
+            <h3 class="product-name">Şahin gibi Göz</h3>
+            <p class="product-price">₺320.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="8" data-name="Dalak" data-imgname="dalak" data-price="180"  data-type="Dalak" data-health="Makul" data-age="67" data-gender="Kadın" data-blood="Brh-">
+            <img src="../gorseller/dalak2.png" alt="Karaciger" class="product-img">
+            <h3 class="product-name">Dayak Yememiş Dalak</h3>
+            <p class="product-price">₺180.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="9" data-name="Pankreas" data-imgname="pankreas" data-price="200" data-type="Pankreas" data-health="İyi" data-age="30" data-gender="Erkek" data-blood="Arh-">
+            <img src="../gorseller/pankreas.png" alt="Karaciger" class="product-img">
+            <h3 class="product-name">Pankreas</h3>
+            <p class="product-price">₺200.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="10" data-name="Kornea" data-imgname="kornea" data-type="Kornea" data-health="İyi" data-age="40" data-gender="Kadın" data-blood="Arh+"
+          style="display: none;">
+             <img src="../gorseller/kornea.png" alt="Kornea" class="product-img">
+            <h3 class="product-name">Kornea</h3>
+            <p class="product-price">₺140.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="11" data-name="Deri" data-imgname="deri" data-price="70" data-type="Deri" data-health="Çok iyi" data-age="34" data-gender="Erkek" data-blood="0rh+"
+          style="display: none;">
+            <img src="../gorseller/deri.png" alt="Deri" class="product-img">
+            <h3 class="product-name">Krem Renk Deri</h3>
+            <p class="product-price">₺70.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="12" data-name="Kemik" data-imgname="kemik" data-price="95" data-type="Kemik" data-health="İyi" data-age="46" data-gender="Kadın" data-blood="Brh-"
+          style="display: none;">
+            <img src="../gorseller/kemik.png" alt="Kemik" class="product-img">
+             <h3 class="product-name">Hiç Kırılmamış Kemik</h3>
+              <p class="product-price">₺95.000</p>
+            <div class="product-actions">
+              <button class="fav-btn">❤︎</button>
+              <button class="cart-btn">Sepete Ekle</button>
+            </div>
+          </div>
+      
+        </div>
+        <div id="toast" class="toast-message"></div>
+      </section>
+
+      <div class="product-quotation">
+       <q class="quotation">Her bağış bir mucizedir.</q>
+      </div>
+
+</main>
+
+<!--Footer-->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Sol: Logo ve Yazı -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="../GORSELLER/logo.png" alt="Organ Sepetim Logo" />
+        <span class="footer-brand">Organ Sepetim</span>
+      </div>
+      <p class="footer-copy">© 2025 Organ Sepetim. Tüm hakları saklıdır.</p>
+      <a href="mailto:info@organsepetim.org" class="footer-mail">info@organsepetim.org</a>
+    </div>
+
+    <!-- Orta: Bağlantılar -->
+    <div class="footer-links">
+      <h4>Hızlı Bağlantılar</h4>
+      <ul>
+        <li><a href="organlar.html">Organlar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="favorites.html">Favoriler</a></li>
+        <li><a href="shopping-cart.html">Sepet</a></li>
+      </ul>
+    </div>
+
+    <!-- Sağ: Sosyal Medya -->
+    <div class="footer-social">
+      <h4>Bizi Takip Edin</h4>
+      <a href="https://wa.me/905316668828" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/organsepetim" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/organsepetim" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://maps.app.goo.gl/RtzT565evafdXZg37" target="_blank"><i class="fas fa-map-marker-alt"></i> Konum</a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="../JAVASCRIPT/organlarJS.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Paytone+One&family=Syne:wght@400..800&family=Ultra&display=swap');
+
+/*ÜST MENÜ*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+  }
+
+  .nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-left {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+  }
+
+  .nav-left a, .nav-right a {
+  font-family: "cal sans";
+  letter-spacing: 0.03cm;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  transform: scale(1.2);
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.nav-left a:hover {
+  background-color: #ff8080; /* yeşil tonu */
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.logo {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logoPNG {
+    width: 120px;
+    height: 120px;
+}
+
+.logoYazi {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(to bottom, #ce3535 25%, #4a1111 50%, #ce3535 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.logoMetin {
+    font-family: "cal sans";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-left: -20px;
+  }
+
+  .nav-right-png {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+  }
+
+    h1 {
+    width: fit-content;    
+    position: relative;
+    font-family: "arial";
+    text-align: left;
+    font-size: 42px;
+    margin-bottom: 30px;
+    left: 30px;
+    top: 30px;
+    color: #2c2c2c;
+    z-index: 1;
+  }
+
+  h1:hover {
+    text-decoration: underline solid #ffffff;
+    transition: ease 250ms;
+    transform: translateY(-10px);
+    cursor: default;
+  }
+
+.cart-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  gap: 40px;
+}
+
+.cart-items {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cart-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.cart-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h3 {
+  margin: 0 0 10px;
+  font-family: "Cal Sans";
+  font-size: 20px;
+  color: #333;
+}
+
+.cart-details p {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #666;
+}
+
+.cart-details button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ce3535;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-summary {
+  flex: 1;
+  background: #fafafa;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.cart-summary h2 {
+  font-size: 26px;
+  font-family: "Cal Sans";
+  margin-top: -2px;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.cart-summary p {
+  font-family: calibri;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #276d4d;
+}
+
+.perspective-wrapper {
+  perspective: 600px; /* sahne derinliği */
+}
+
+#empty-bag {
+    font-size: 100px;
+    font-style: oblique;
+    opacity: 25%;
+    background-color: #f2f2f2;
+    width: 60%;
+    padding: 70 30;
+    margin-left: -100px;
+    border-radius: 60px;
+    margin-top: -20px;
+    transition: transform 0.4s ease;
+    
+}
+
+#empty-bag:hover {
+    transform: rotateX(30deg);
+    cursor: default;
+    user-select: none;
+
+}
+
+.clear-cart-btn {
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: 15%;
+  background-color: #f3f3f3;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-cart-btn:hover {
+  color: #f2f2f2;  
+  background-color: #ec5555;
+  box-shadow: 0px 1.5px 10px rgb(128, 127, 127);
+}
+
+/*Footer*/
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 60px;
+  font-family: 'Calibri', sans-serif;
+}
+
+.footer-container {  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-brand {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #aa1d1d, #4a1111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-mail {
+  color: #ffdddd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 12px;
+  margin-right: 100px ;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-social i {
+  margin-right: 8px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+

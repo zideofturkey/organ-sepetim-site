@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Paytone+One&family=Syne:wght@400..800&family=Ultra&display=swap');
+
+/*ÜST MENÜ*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+  }
+
+  .nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-left {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+  }
+
+  .nav-left a, .nav-right a {
+  font-family: "cal sans";
+  letter-spacing: 0.03cm;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  transform: scale(1.2);
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.nav-left a:hover {
+  background-color: #ff8080; /* yeşil tonu */
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: ease 400ms;
+}
+
+.logo {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logoPNG {
+    width: 120px;
+    height: 120px;
+}
+
+.logoYazi {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(to bottom, #ce3535 25%, #4a1111 50%, #ce3535 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.logoMetin {
+    font-family: "cal sans";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-left: -20px;
+  }
+
+  .nav-right-png {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+  }
+
+/*PRODUCT*/
+
+  .product-section {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  /* Dev yazı arka plan */
+.section-bg-text {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  font-size: 220px;
+  font-weight: bold;
+  font-style: oblique;
+  color: rgba(0, 0, 0, 0.05); /* Hafif transparan */
+  pointer-events: none; /* Tıklanamaz olur */
+  user-select: none;
+  z-index: 0;
+}
+
+  .section-title {
+    width: fit-content;    
+    position: relative;
+    font-family: "arial";
+    text-align: left;
+    font-size: 42px;
+    margin-bottom: 30px;
+    left: 30px;
+    top: 30px;
+    color: #2c2c2c;
+    z-index: 1;
+    
+  }
+
+  .section-title:hover {
+    text-decoration: underline solid #ffffff;
+    transition: ease 250ms;
+    transform: translateY(-10px);
+    cursor: default;
+}
+
+  .product-grid,
+  .see-all-container {
+  position: relative;
+  z-index: 1;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sabit sütun */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr; /* telefon */
+    }
+  }
+  
+  .product-card {
+    margin-top: 80px;
+    height: 425px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 14px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    font-family: "calibri";
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-price {
+    font-family: "calibri";
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 15px;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .fav-btn,
+  .cart-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fav-btn {
+    padding: 5 8;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #d9534f;
+  }
+  
+  .fav-btn:hover {
+    background-color: #fce4ec;
+  }
+  
+  .cart-btn {
+    background-color: #2e8b57;
+    color: white;
+  }
+  
+  .cart-btn:hover {
+    background-color: #276d4d;
+  }
+  
+  .see-all-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .see-all-button {
+    font-family: calibri;
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .see-all-button:hover {
+    background-color: #276d4d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+ .toast-message {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #156319;
+  color: rgb(236, 236, 236);
+  padding: 12px 24px;
+  font-size: 24px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.4s ease, transform 0.6s ease;
+}
+
+.toast-message.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.toast-message.hide {
+  opacity: 0;
+  transform: translate(-50%, 100%);
+}
+
+#empty-fv {
+    font-size: 100px;
+    font-style: oblique;
+    opacity: 25%;
+    background-color: #f2f2f2;
+    width: fit-content;
+    padding: 10px 30px;
+    margin-left: -100%;
+    border-radius: 60px;
+    margin-top: 20px;
+    transition: transform 0.4s ease;
+}
+
+#empty-fv:hover {
+    transform: rotateX(30deg);
+    cursor: default;
+    user-select: none;
+
+}
+
+/*Footer*/
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 60px;
+  font-family: 'Calibri', sans-serif;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-brand {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #aa1d1d, #4a1111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-mail {
+  color: #ffdddd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 12px;
+  margin-right: 100px ;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-social i {
+  margin-right: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+}
