@@ -72,17 +72,21 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 ![home](https://github.com/user-attachments/assets/76826a3b-7a28-4797-9660-71241d4bdcd3)
 > İletişim, firma sahibi (ben) ve hayali ekip arkadaşlarımızın tanıtıldığı, müşterilerin kafa karışıklığını giderme amaçlı Sıkça Sorulan Sorular (SSS) bölümünün tasarlandığı son olarak da form ile kapanış yapan site kuplesi. 
 
+### ❤️ Organ Bağışı Formu
+![form](https://github.com/user-attachments/assets/a234a4a0-6093-4853-b3c4-b4b46c66012f)
+> Bağış formu, donörün gerekli bilgileri ve iletişim kanalları alınır. Eğer uygunluk testimizden geçerse kendisi ile iletişime geçilir ve işlemler başlatılır. Bu aşamalar web sitenin backend kısmında kayda tabi tutulur.
+
+### ⭐ Favoriler
+![favorites](https://github.com/user-attachments/assets/e5bb4734-7f7c-4ccc-b216-644929aafe0d)
+> Kullanıcıların kendine uygun bulduğu organları ileride kaybetmesinler diye oluşturduğumuz sayfa.
+
 ### 🛒 Sepet Ekranı
-![cart](https://kendi-kaynak-url'in/sepet.png)
-> Kullanıcının sepete eklediği organları gösterir. Toplam fiyat ve ödeme simülasyonu içerir.
+![cart](https://github.com/user-attachments/assets/a4e1d02b-2c5e-4cc5-9854-ee55854e1063)
+> Kullanıcının artık son raddesi; edinmek istediği organın son hâli ile gösterildiği sayfa (ödeme ekranına ve ötesine gidilemeyecek bölüm).
 
 ### 👤 Admin Paneli
 ![admin](https://kendi-kaynak-url'in/adminpanel.png)
 > Adminler kullanıcıları düzenleyebilir, yeni organ ekleyebilir veya var olanları gizleyebilir.
-
-### ❤️ Organ Bağışı Formu
-![form](https://kendi-kaynak-url'in/form.png)
-> Bağış yapılacak organın, donör bilgileri ve sağlık durumu detayları girilebilir.
 
 ## 📂 Projeye Erişim
 
