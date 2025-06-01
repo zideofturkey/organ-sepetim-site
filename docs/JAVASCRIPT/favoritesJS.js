@@ -8,7 +8,7 @@ if (favorites.length === 0) {
   favorites.forEach((item, index) => {
     container.innerHTML += `
       <div class="product-card">
-        <img src="../gorseller/${item.imgname.toLowerCase()}.png" alt="${item.name}" class="product-img">
+        <img src="../GORSELLER/${item.imgname.toLowerCase()}.png" alt="${item.name}" class="product-img">
         <h3 class="product-name">${item.name}</h3>
         <p class="product-price">₺${item.price}.000</p>
         <div class="product-actions">
