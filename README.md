@@ -1,4 +1,5 @@
-# 🫀 Organ Sepetim - Web Projesi 🫁
+# TR
+# 🫀 Organ Sepetim
 
 **⚠️ Bu proje tamamen hayal ürünüdür. Gerçek dünyada herhangi bir işlevi yoktur ve bu site gerçek bir amaca hizmet etmemektedir. Sadece web programlama eğitimi kapsamında mizahi bir örnek olarak geliştirilmiştir.**
 
@@ -56,8 +57,20 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 > Bize ulaşın, yine iletişim sayfasının bir bölümünü barındıran kesit.
 
 ### 🔚 Footer
-![home](https://github.com/user-attachments/assets/7c44db7b-4cc5-482a-8748-0a204b4bf633)
+![organ](https://github.com/user-attachments/assets/7c44db7b-4cc5-482a-8748-0a204b4bf633)
 > Footer, her sayfanın sonunda bulunan basit ama işlevsel; kolay bağlantıların, iletişim adresinin ve sosyal profillerin bulunduğu kısım.
+
+### 🫁 Organlar
+![home](https://github.com/user-attachments/assets/bd4103d6-66e6-4342-9ed4-b1f374eb9a09)
+> Organlar, kullanıcıların kendi ihtiyaçlarına göre organları filtreleyebildiği ve favori, sepet işlemlerini kolayca tamamlayabildiği sayfa
+
+### ℹ️ Hakkımızda
+![home](https://github.com/user-attachments/assets/dc8c3ec5-a90e-465e-b3e9-4816b779df91)
+> Hakkımızda, şirket ve şirket bağlantılarını, misyon ve vizyonlarımızı anlatan ilaveten bazı bilgilendirmeler ve müşteri geri dönüşleri bulunan, dinamik olmasa da hoş bir görünümle süslenen site sayfası.
+
+### 📩 İletişim
+![home](https://github.com/user-attachments/assets/76826a3b-7a28-4797-9660-71241d4bdcd3)
+> İletişim, firma sahibi (ben) ve hayali ekip arkadaşlarımızın tanıtıldığı, müşterilerin kafa karışıklığını giderme amaçlı Sıkça Sorulan Sorular (SSS) bölümünün tasarlandığı son olarak da form ile kapanış yapan site kuplesi. 
 
 ### 🛒 Sepet Ekranı
 ![cart](https://kendi-kaynak-url'in/sepet.png)
@@ -80,8 +93,10 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 
 ## 👨‍💻 Geliştirici
 
-**Mustafa Ediz Kaçmaz**  
+**Ediz Kaçmaz**  
 📘 [29 Mayıs Üniversitesi - Yönetim Bilişim Sistemleri]
 
 ---
+#EN
+# 🫀 Organ Sepetim
 
