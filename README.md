@@ -31,6 +31,10 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 
 ## 🖼️ Uygulama Görselleri
 
+### 🔐 Log-in
+![login](https://github.com/user-attachments/assets/d02bb887-72e5-494f-89b0-2a2f4d612eb0)
+> Giriş Yap, bu sekme bilerek ve isteyerek kayıt olma seçeneği olmadan tasarlanmıştır. Böyle hassas konulu bir web siteye herkesin değil sadece erişimi olan kişilerin ulaşabilmesi açısından bu sistem geliştirilmiştir. Admin-panel'den yeni kullanıcı eklenebilir ve mevcut kullancılar pasif hâle getirilebilir olarak tasarlanmıştır. 
+
 ### 🏠 Ana Sayfa
 ![home](https://github.com/user-attachments/assets/c5f8efdd-557f-45cb-8fa3-5fd53426133c)
 > Organlar, sepete ekleme butonu, favori simgesi ve fiyatlarla listelenmektedir.
