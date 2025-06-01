@@ -113,7 +113,7 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 📘 [29 Mayıs Üniversitesi - Yönetim Bilişim Sistemleri]
 
 ---
-#EN
+# EN
 # 🫀 Organ Sepetim
 
 **⚠️ This project is entirely fictional. It does not serve any real purpose and was developed solely as a humorous example within the scope of web programming education.**
