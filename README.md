@@ -1,10 +1,10 @@
 # 🫀 Organ Sepetim - Web Projesi 🫁
 
-**⚠️ Bu proje tamamen hayal ürünüdür. Gerçek dünyada organ alım-satımı yasa dışıdır ve bu site gerçek bir amaca hizmet etmemektedir. Sadece web programlama eğitimi kapsamında mizahi bir örnek olarak geliştirilmiştir.**
+**⚠️ Bu proje tamamen hayal ürünüdür. Gerçek dünyada herhangi bir işlevi yoktur ve bu site gerçek bir amaca hizmet etmemektedir. Sadece web programlama eğitimi kapsamında mizahi bir örnek olarak geliştirilmiştir.**
 
 ## 🎯 Proje Hakkında
 
-Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışveriş yapabildiği, frontend ve backend olmak üzere iki parçadan oluşan bir web uygulamasıdır. Bu uygulama sayesinde hem **kullanıcı girişi**, **ürün listeleme**, **sepet sistemi**, hem de **admin paneli** gibi temel web yapıları örneklenmiştir.
+Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışveriş yapabildiği, frontend ve backend olmak üzere iki parçadan oluşan bir web uygulamasıdır. Web sitede gerekli olan **hakkımızda**, **iletişim**, gibi sayfalar eklenip gerçekçi bir görünüm oluşturulmuş, **organlar** ve **ana sayfa** gibi sayfa görsellerinde ise aşırı renkler, çizim görseller ve kinayeli başlıklar kullanılarak eğlenceli bir site oluşturmak amaçlanmıştır. Bu uygulama sayesinde hem **kullanıcı girişi**, **ürün listeleme**, **sepet sistemi**, hem de **admin paneli** gibi temel web yapıları örneklenmiştir.
 
 ## 🧰 Kullanılan Teknolojiler
 
@@ -23,7 +23,7 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 - 🛒 Organ ürünlerini sepete ekleyebilme
 - ❤️ Favorilere ürün ekleyip çıkarma
 - 🧾 Organ bağışı yapabilme formu
-- 📋 Admin panelinden kullanıcı, ürün ve bağış yönetimi
+- 📋 Admin panelinden kullanıcı, ürün, rapor ve bağış yönetimi
 - 🗂️ Filtreleme ve sıralama seçenekleri
 - 📦 Sepette tutar, kargo ve ödeme bilgisi simülasyonu
 - 📈 Son giriş tarihi dinamik şekilde güncellenir
@@ -32,7 +32,7 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 ## 🖼️ Uygulama Görselleri
 
 ### 🏠 Ana Sayfa
-![home](https://kendi-kaynak-url'in/anasayfa.png)
+![home](https://github.com/user-attachments/assets/c5f8efdd-557f-45cb-8fa3-5fd53426133c)
 > Organlar, sepete ekleme butonu, favori simgesi ve fiyatlarla listelenmektedir.
 
 ### 🛒 Sepet Ekranı
