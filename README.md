@@ -35,9 +35,29 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 ![login](https://github.com/user-attachments/assets/d02bb887-72e5-494f-89b0-2a2f4d612eb0)
 > Giriş Yap, bu sekme bilerek ve isteyerek kayıt olma seçeneği olmadan tasarlanmıştır. Böyle hassas konulu bir web siteye herkesin değil sadece erişimi olan kişilerin ulaşabilmesi açısından bu sistem geliştirilmiştir. Admin-panel'den yeni kullanıcı eklenebilir ve mevcut kullancılar pasif hâle getirilebilir olarak tasarlanmıştır. 
 
-### 🏠 Ana Sayfa
+### 🏠 Ana Sayfa - 1
 ![home](https://github.com/user-attachments/assets/c5f8efdd-557f-45cb-8fa3-5fd53426133c)
-> Organlar, sepete ekleme butonu, favori simgesi ve fiyatlarla listelenmektedir.
+> Ana sayfa açılışı, esma arkadaşımın ve kardeşine bir böbreğini bağışlayan babasının yardımlarıyla çekilmiş gerçek bir video ile sunulur.
+
+### 🏠 Ana Sayfa - 2
+![home](https://github.com/user-attachments/assets/c6157e36-fd90-4cca-b2af-f058c8da8f9c)
+> Öne çıkan organlar, sitedeki organlar sayfasının bir ön izlemesi denebilir.
+
+### 🏠 Ana Sayfa - 3
+![home](https://github.com/user-attachments/assets/68d33c83-487d-4512-be42-4345f1145e8d)
+> "Bu ücret neden?", hakkımızda sayfasından bir kesit.   
+
+### 🏠 Ana Sayfa - 4
+![home](https://github.com/user-attachments/assets/9ae9ba2d-c969-400d-a47b-572521256cdf)
+> "Bağışla!" Sayfanın asıl amacına hizmet eden, organ bağışlama formunu barındıran bölüm.
+
+### 🏠 Ana Sayfa - 5
+![home](https://github.com/user-attachments/assets/a52cb6f5-3cc2-46f4-bfe8-75bf88f188a6)
+> Bize ulaşın, yine iletişim sayfasının bir bölümünü barındıran kesit.
+
+### 🔚 Footer
+![home](https://github.com/user-attachments/assets/7c44db7b-4cc5-482a-8748-0a204b4bf633)
+> Footer, her sayfanın sonunda bulunan basit ama işlevsel; kolay bağlantıların, iletişim adresinin ve sosyal profillerin bulunduğu kısım.
 
 ### 🛒 Sepet Ekranı
 ![cart](https://kendi-kaynak-url'in/sepet.png)
