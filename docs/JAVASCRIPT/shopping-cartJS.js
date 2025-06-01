@@ -30,7 +30,7 @@ if (cart.length === 0) {
 
     container.innerHTML += `
       <div class="cart-card">
-        <img src="../GORSELLER/${item.imgname}.png" alt="${item.name}">
+        <img src="../GORSELLER/${item.imgname.toLowerCase()}.png" alt="${item.name}">
         <div class="cart-details">
           <h3>${item.name}</h3>
           <p>Fiyat: ₺${item.price}.00</p>
