@@ -1,7 +1,7 @@
 # TR
 # 🫀 Organ Sepetim
 
-**🔑 User giriş için id: user, password: user123. Admin giriş için id: admin, password: admin123**
+**🔑 User giriş için id: user, password: user123. Admin giriş için id: admin, password: admin123 .**
 **⚠️ Bu proje tamamen hayal ürünüdür. Gerçek dünyada herhangi bir işlevi yoktur ve bu site gerçek bir amaca hizmet etmemektedir. Sadece web programlama eğitimi kapsamında mizahi bir örnek olarak geliştirilmiştir.**
 
 ## 🎯 Proje Hakkında
