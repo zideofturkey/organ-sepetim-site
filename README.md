@@ -1,6 +1,7 @@
 # TR
 # 🫀 Organ Sepetim
 
+**🔑 User giriş için id: user, password: user123. Admin giriş için id: admin, password: admin123**
 **⚠️ Bu proje tamamen hayal ürünüdür. Gerçek dünyada herhangi bir işlevi yoktur ve bu site gerçek bir amaca hizmet etmemektedir. Sadece web programlama eğitimi kapsamında mizahi bir örnek olarak geliştirilmiştir.**
 
 ## 🎯 Proje Hakkında
@@ -116,6 +117,7 @@ Organ Sepetim, kullanıcıların hayali olarak organları sepete ekleyip alışv
 # EN
 # 🫀 Organ Sepetim
 
+**🔑 For the user login id: user, password: user123. For the admin login id: admin, password: admin123**
 **⚠️ This project is entirely fictional. It does not serve any real purpose and was developed solely as a humorous example within the scope of web programming education.**
 
 ## 🎯 About the Project
