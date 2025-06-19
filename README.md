@@ -1,7 +1,7 @@
 # TR
 # 🫀 Organ Sepetim
 
-** 🔗 Site link: https://zideofturkey.github.io/organ-sepetim-site/**
+**🔗 Site link: https://zideofturkey.github.io/organ-sepetim-site/**
 
 **🔑 User giriş için id: user, password: user123. Admin giriş için id: admin, password: admin123**
 
